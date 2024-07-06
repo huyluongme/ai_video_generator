@@ -6,7 +6,7 @@ import os
 import glob
 
 client = ElevenLabs(
-  api_key="910055a76b8210bb1a4fa5cdbb139318",
+  api_key="ENTER YOUR API KEY",
 )
 
 with gr.Blocks(title="AI Video Generator") as demo:
