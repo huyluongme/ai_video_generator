@@ -53,11 +53,11 @@ with gr.Blocks(title="AI Video Generator") as demo:
 
 
         def process(script, voice, img):
+            gr.Info("Generating, please wait!")
             gen_audio(script, voice)
             if os.path.exists("./results"):
                 shutil.rmtree("./results")
-            gr.Info("Generating, please wait!")
-            os.system(f'python inference.py --driven_audio tmp\\audio.wav --source_image {img} --enhancer gfpgan')
+            os.system(f'python inference.py --driven_audio tmp\\audio.wav --source_image {img} --still --enhancer gfpgan --preprocess full')
             mp4_files = glob.glob(os.path.join('./results', '**', '*.mp4'), recursive=True)
             return mp4_files[0]
 
