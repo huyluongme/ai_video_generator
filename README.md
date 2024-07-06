@@ -52,4 +52,6 @@ python app.py
 ```
 
 ## Result Demo
-[![YouTube](http://i.ytimg.com/vi/j65Yz5WBp54/hqdefault.jpg)](https://www.youtube.com/watch?v=j65Yz5WBp54)
+https://github.com/huyluongme/ai_video_generator/assets/48280785/0179e811-7d8f-4fdd-a89a-3c815e93082f
+
+
